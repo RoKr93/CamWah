@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		3FA00F3A195F7B1700A6FA78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA00F39195F7B1700A6FA78 /* main.m */; };
 		3FA00F3D195F7B1700A6FA78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA00F3C195F7B1700A6FA78 /* AppDelegate.m */; };
-		3FA00F40195F7B1700A6FA78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA00F3F195F7B1700A6FA78 /* ViewController.m */; };
+		3FA00F40195F7B1700A6FA78 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3FA00F3F195F7B1700A6FA78 /* ViewController.mm */; };
 		3FA00F43195F7B1700A6FA78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA00F41195F7B1700A6FA78 /* Main.storyboard */; };
 		3FA00F45195F7B1700A6FA78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA00F44195F7B1700A6FA78 /* Images.xcassets */; };
 		3FA00F51195F7B1700A6FA78 /* ProximityWahAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA00F50195F7B1700A6FA78 /* ProximityWahAppTests.m */; };
+		3FA00F79195F815D00A6FA78 /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3FA00F72195F815D00A6FA78 /* AudioFileReader.mm */; };
+		3FA00F7A195F815D00A6FA78 /* AudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA00F74195F815D00A6FA78 /* AudioFileWriter.m */; };
+		3FA00F7B195F815D00A6FA78 /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA00F76195F815D00A6FA78 /* Novocaine.m */; };
+		3FA00F7C195F815D00A6FA78 /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3FA00F78195F815D00A6FA78 /* RingBuffer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +36,20 @@
 		3FA00F3B195F7B1700A6FA78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FA00F3C195F7B1700A6FA78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3FA00F3E195F7B1700A6FA78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3FA00F3F195F7B1700A6FA78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FA00F3F195F7B1700A6FA78 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		3FA00F42195F7B1700A6FA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FA00F44195F7B1700A6FA78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3FA00F4A195F7B1700A6FA78 /* ProximityWahAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximityWahAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA00F4F195F7B1700A6FA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA00F50195F7B1700A6FA78 /* ProximityWahAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProximityWahAppTests.m; sourceTree = "<group>"; };
+		3FA00F71195F815D00A6FA78 /* AudioFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileReader.h; sourceTree = "<group>"; };
+		3FA00F72195F815D00A6FA78 /* AudioFileReader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioFileReader.mm; sourceTree = "<group>"; };
+		3FA00F73195F815D00A6FA78 /* AudioFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileWriter.h; sourceTree = "<group>"; };
+		3FA00F74195F815D00A6FA78 /* AudioFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileWriter.m; sourceTree = "<group>"; };
+		3FA00F75195F815D00A6FA78 /* Novocaine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Novocaine.h; sourceTree = "<group>"; };
+		3FA00F76195F815D00A6FA78 /* Novocaine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Novocaine.m; sourceTree = "<group>"; };
+		3FA00F77195F815D00A6FA78 /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		3FA00F78195F815D00A6FA78 /* RingBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RingBuffer.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 		3FA00F2B195F7B1700A6FA78 = {
 			isa = PBXGroup;
 			children = (
+				3FA00F70195F815D00A6FA78 /* Novocaine */,
 				3FA00F36195F7B1700A6FA78 /* ProximityWahApp */,
 				3FA00F4D195F7B1700A6FA78 /* ProximityWahAppTests */,
 				3FA00F35195F7B1700A6FA78 /* Products */,
@@ -82,7 +95,7 @@
 				3FA00F3B195F7B1700A6FA78 /* AppDelegate.h */,
 				3FA00F3C195F7B1700A6FA78 /* AppDelegate.m */,
 				3FA00F3E195F7B1700A6FA78 /* ViewController.h */,
-				3FA00F3F195F7B1700A6FA78 /* ViewController.m */,
+				3FA00F3F195F7B1700A6FA78 /* ViewController.mm */,
 				3FA00F41195F7B1700A6FA78 /* Main.storyboard */,
 				3FA00F44195F7B1700A6FA78 /* Images.xcassets */,
 				3FA00F37195F7B1700A6FA78 /* Supporting Files */,
@@ -114,6 +127,22 @@
 				3FA00F4F195F7B1700A6FA78 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FA00F70195F815D00A6FA78 /* Novocaine */ = {
+			isa = PBXGroup;
+			children = (
+				3FA00F71195F815D00A6FA78 /* AudioFileReader.h */,
+				3FA00F72195F815D00A6FA78 /* AudioFileReader.mm */,
+				3FA00F73195F815D00A6FA78 /* AudioFileWriter.h */,
+				3FA00F74195F815D00A6FA78 /* AudioFileWriter.m */,
+				3FA00F75195F815D00A6FA78 /* Novocaine.h */,
+				3FA00F76195F815D00A6FA78 /* Novocaine.m */,
+				3FA00F77195F815D00A6FA78 /* RingBuffer.h */,
+				3FA00F78195F815D00A6FA78 /* RingBuffer.mm */,
+			);
+			name = Novocaine;
+			path = "../../../Desktop/novocaine-master/Novocaine";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA00F40195F7B1700A6FA78 /* ViewController.m in Sources */,
+				3FA00F40195F7B1700A6FA78 /* ViewController.mm in Sources */,
 				3FA00F3D195F7B1700A6FA78 /* AppDelegate.m in Sources */,
+				3FA00F7B195F815D00A6FA78 /* Novocaine.m in Sources */,
+				3FA00F7C195F815D00A6FA78 /* RingBuffer.mm in Sources */,
+				3FA00F7A195F815D00A6FA78 /* AudioFileWriter.m in Sources */,
 				3FA00F3A195F7B1700A6FA78 /* main.m in Sources */,
+				3FA00F79195F815D00A6FA78 /* AudioFileReader.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ProximityWahApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -344,6 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ProximityWahApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -404,6 +439,7 @@
 				3FA00F56195F7B1700A6FA78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FA00F57195F7B1700A6FA78 /* Build configuration list for PBXNativeTarget "ProximityWahAppTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +448,7 @@
 				3FA00F59195F7B1700A6FA78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
